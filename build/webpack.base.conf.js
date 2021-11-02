@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-11-02 15:45:52
+ * @LastEditTime: 2021-11-02 16:55:42
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \qdreamer-official-website\build\webpack.base.conf.js
+ */
 'use strict'
 const path = require('path')
 const utils = require('./utils')
@@ -64,6 +72,10 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      {
+        test: /\.sass$/,
+        loaders:['style','css','sass']
       }
     ]
   },
