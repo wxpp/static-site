@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2021-11-02 15:45:52
- * @LastEditTime: 2021-11-02 16:55:42
- * @LastEditors: your name
+ * @LastEditTime: 2021-11-03 15:49:20
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \qdreamer-official-website\build\webpack.base.conf.js
  */
@@ -12,7 +12,7 @@ const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
 
-function resolve (dir) {
+function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
@@ -21,14 +21,15 @@ function resolve (dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/main.js'
+    // app: './src/main.js'
+    app: ["babel-polyfill", './src/main.js']
   },
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
-    publicPath: process.env.NODE_ENV === 'production'
-      ? config.build.assetsPublicPath
-      : config.dev.assetsPublicPath
+    publicPath: process.env.NODE_ENV === 'production' ?
+      config.build.assetsPublicPath :
+      config.dev.assetsPublicPath
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
@@ -38,12 +39,16 @@ module.exports = {
     }
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.vue$/,
         loader: 'vue-loader',
         options: vueLoaderConfig
       },
+      // {
+      //   //增加less配置支持
+      //   test: /\.less$/,
+      //   loader: "style-loader!css-loader!less-loader",
+      // },
       {
         test: /\.js$/,
         loader: 'babel-loader',
@@ -73,10 +78,10 @@ module.exports = {
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
       },
-      {
-        test: /\.sass$/,
-        loaders:['style','css','sass']
-      }
+      // {
+      //   test: /\.sass$/,
+      //   loaders:['style','css','sass']
+      // }
     ]
   },
   node: {

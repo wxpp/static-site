@@ -10,7 +10,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "node-sass": "^6.0.1",
+    "babel-polyfill": "^6.26.0",
+    "element-ui": "^2.15.6",
+    "normalize.css": "^8.0.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
@@ -39,9 +41,9 @@
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.2.1",
     "rimraf": "^2.6.0",
-    "sass-loader": "^12.3.0",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
+    "style-loader": "^3.3.1",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-loader": "^13.3.0",
