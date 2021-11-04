@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-02 15:45:52
- * @LastEditTime: 2021-11-03 15:49:20
+ * @LastEditTime: 2021-11-04 09:35:25
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \qdreamer-official-website\build\webpack.base.conf.js
@@ -49,6 +49,17 @@ module.exports = {
       //   test: /\.less$/,
       //   loader: "style-loader!css-loader!less-loader",
       // },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          "style-loader",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
+        ],
+      },
       {
         test: /\.js$/,
         loader: 'babel-loader',

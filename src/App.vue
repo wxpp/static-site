@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-11-03 20:35:24
+ * @LastEditTime: 2021-11-04 09:39:06
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \qdreamer-official-website\src\App.vue
+-->
 <template>
   <div id="app">
     <img src="./assets/logo.png">
@@ -11,7 +19,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
