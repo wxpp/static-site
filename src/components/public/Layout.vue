@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-11-04 15:16:48
- * @LastEditTime: 2021-11-05 14:38:05
+ * @LastEditTime: 2021-11-05 17:32:11
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \qdreamer-official-website\src\components\public\Layout.vue
@@ -16,9 +16,6 @@
         <router-view></router-view>
       </transition>
     </el-main>
-    <el-footer>
-      <footer></footer>
-    </el-footer>
   </el-container>
 </template>
 <script>

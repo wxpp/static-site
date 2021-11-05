@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-02 15:45:52
- * @LastEditTime: 2021-11-03 15:49:13
+ * @LastEditTime: 2021-11-05 17:29:07
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \qdreamer-official-website\src\main.js
@@ -15,7 +15,6 @@ import ElementUI from "element-ui"
 // 将ES6代码转为ES5代码，我们可以直接用用ES6编写，而不用考虑环境支持的问题
 
 import 'babel-polyfill'
-
 // element-ui引入默认主题
 import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);

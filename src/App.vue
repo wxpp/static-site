@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-11-03 20:35:24
- * @LastEditTime: 2021-11-05 14:54:53
+ * @LastEditTime: 2021-11-05 17:51:26
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \qdreamer-official-website\src\App.vue
@@ -21,21 +21,18 @@ export default {
 
 <style lang="scss">
 @import url('normalize.css');
-@import "@/assets/style/index.scss";
+@import url("assets/style/index.scss");
+@import url("assets/style/reset-element.scss");
 html,
 body {
-  width: 100%;
-  // height: 100%;
-  box-sizing: border-box;
   padding: 0px;
   margin: 0px;
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif,'Source Han Sans CN';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
