@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-11-03 20:35:24
- * @LastEditTime: 2021-11-04 15:15:01
+ * @LastEditTime: 2021-11-05 14:54:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \qdreamer-official-website\src\App.vue
@@ -21,6 +21,7 @@ export default {
 
 <style lang="scss">
 @import url('normalize.css');
+@import "@/assets/style/index.scss";
 html,
 body {
   width: 100%;
