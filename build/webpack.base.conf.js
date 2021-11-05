@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-02 15:45:52
- * @LastEditTime: 2021-11-04 09:35:25
+ * @LastEditTime: 2021-11-04 15:18:29
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \qdreamer-official-website\build\webpack.base.conf.js
@@ -36,6 +36,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      "cpom":resolve('src/components'),
     }
   },
   module: {
